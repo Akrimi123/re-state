@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+.para{
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration-line: underline;
+    color: rgb(243, 64, 64);
+    
+}
+button{
+    margin-left: 50%;
+    font-size: 250%;
+    font-style: italic;
+    font-weight: bolder;
+    position: relative;
+    background: rgb(51, 115, 233);
+    display: flex;
+    justify-content: center;
+}
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #00fe73;
+    transition: 0.5s ease-in-out;
+
+}
+button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: #00fe73;
+    transition: 0.5s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover::before,
+button:hover::after{
+
+    width: 50%;
+}
+button:hover{
+    transform: scale(2);
+    transition-delay: 0s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+    text-align: center;
+    margin-top: -20%;
+    margin-left: 2%;
+    font-style: italic;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 20%;
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    
 }
-
-.App-link {
-  color: #61dafb;
+img{
+    width: 35%;
+    height: 25%;
+    margin-left: 5%;
+    border-radius: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+    margin-left:  43%;
+    font-style: italic;
 }
